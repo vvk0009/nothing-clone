@@ -31,7 +31,6 @@ nav ul li a{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .hero_section .img_section{
     width: 70%;
@@ -94,7 +93,7 @@ nav ul li a{
 footer{
     background-color: black;
     color: white;
-    height: 50vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
