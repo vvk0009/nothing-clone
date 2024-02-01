@@ -26,19 +26,21 @@ nav ul li a{
     font-size: 20px;
     color: black;
 }
-.container{
+.hero_section{
     height: 90vh;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.container .img_section{
+.hero_section .img_section{
     width: 70%;
 }
-.container .img_section img{
+.hero_section .img_section img{
     width: 100%;
     height: 90vh;
 }
-.container .text_section{
+.hero_section .text_section{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -46,15 +48,15 @@ nav ul li a{
     padding-left: 12px;
     margin-bottom: 20px;
 }
-.container .text_section h1{
+.hero_section .text_section h1{
     font-size: 50px;
     margin-bottom: 20px;
 }
-.container .text_section p{
+.hero_section .text_section p{
     margin-bottom: 14px;
     font-size: 18px;
 }
-.container .text_section button{
+.hero_section .text_section button{
     border: none;
     background-color: rgb(0,47,108);
     color: white;
@@ -63,13 +65,13 @@ nav ul li a{
     border-radius: 50px;
     font-size: 20px;
 }
-.container .text_section a{
+.hero_section .text_section a{
     margin-top: 20px;
     color: rgb(24,104,166);
     text-decoration: none;
     font-size: 20px;
 }
-.container .text_section span{
+.hero_section .text_section span{
     display: flex;
     gap: 30px;
 }
@@ -150,6 +152,9 @@ footer input::placeholder{
 .mobile_footer{
     display: none;
 }
+.para{
+    display: none;
+}
 
 @media (max-width:768px) {
     nav{
@@ -159,11 +164,11 @@ footer input::placeholder{
         display: block;
     }
 
-    .container{
+    .hero_section{
         flex-direction: column;
         height: auto;
     }
-    .container .img_section{
+    .hero_section .img_section{
         width: 100%;
     }
     .container_1{
@@ -195,7 +200,7 @@ footer input::placeholder{
 
     .mobile_footer input{
         height: 8vh;
-        width: 400px;
+        width: 90%;
         border: 2px solid white;
         border-radius: 20px ;
         background: none;
@@ -219,5 +224,16 @@ footer input::placeholder{
         display: flex;
         flex-direction: column;
         
+    }
+    .para1{
+        display: none;
+    }
+    .para{
+        display: block;
+    }
+
+    .hero_section .text_section button{
+        width: 100%;
+
     }
 }
