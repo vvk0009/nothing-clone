@@ -37,7 +37,6 @@ nav ul li a{
 }
 .hero_section .img_section img{
     width: 100%;
-    height: 90vh;
 }
 .hero_section .text_section{
     display: flex;
